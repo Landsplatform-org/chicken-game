@@ -23,7 +23,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route index element={<HomePage />} />
+          <Route path="/chicken-game/" element={<HomePage />} />
           <Route path="/chicken-game/contests" element={<ContestsPage />} />
           <Route path="/chicken-game/news" element={<NewsPage />} />
           <Route path="/chicken-game/about" element={<AboutPage />} />
