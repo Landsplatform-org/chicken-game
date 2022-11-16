@@ -3,6 +3,7 @@ import axios from "axios";
 import NewsTemplate from "../templates/NewsTemplate";
 import Pagination from "./Pagination";
 import { INewsProps } from "../interfaces/INews";
+import { MutatingDots } from "react-loader-spinner";
 
 const styles = {
   wrapper: `w-full h-max bg-white flex justify-center`,
@@ -52,7 +53,17 @@ const News = () => {
       <div className={styles.container}>
         {loading && (
           <div>
-            <h1>Loading...</h1>
+            <MutatingDots
+              height="100"
+              width="100"
+              color="#2790cb"
+              secondaryColor="#2790cb"
+              radius="12.5"
+              ariaLabel="mutating-dots-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+            />
           </div>
         )}
         {currentNews?.map((item, index) => (
