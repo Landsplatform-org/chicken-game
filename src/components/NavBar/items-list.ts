@@ -2,36 +2,36 @@ export const navItems = [
   {
     id: 1,
     name: 'Главная',
-    to: '/'
+    to: '/chicken-game/'
   },
   {
     id: 2,
     name: 'Конкурсы',
-    to: '/contests'
+    to: '/chicken-game/contests'
   },
   {
     id: 3,
     name: 'Новости',
-    to: '/news'
+    to: '/chicken-game/news'
   },
   {
     id: 4,
     name: 'Об игре',
-    to: '/about'
+    to: '/chicken-game/about'
   },
   {
     id: 5,
     name: 'Отзывы',
-    to: '/feedback'
+    to: '/chicken-game/feedback'
   },
   {
     id: 6,
     name: 'Статистика',
-    to: '/statistics'
+    to: '/chicken-game/statistics'
   },
   {
     id: 7,
     name: 'Помощь',
-    to: '/support'
+    to: '/chicken-game/support'
   },
 ];

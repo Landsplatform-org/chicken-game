@@ -2,41 +2,41 @@ export const footerNavItems = [
   {
     id: 1,
     name: 'Конкурсы',
-    to: '/contests'
+    to: '/chicken-game/contests'
   },
   {
     id: 2,
     name: 'Новости',
-    to: '/news'
+    to: '/chicken-game/news'
   },
   {
     id: 3,
     name: 'Об игре',
-    to: '/about'
+    to: '/chicken-game/about'
   },
   {
     id: 4,
     name: 'Отзывы',
-    to: '/feedback'
+    to: '/chicken-game/feedback'
   },
   {
     id: 5,
     name: 'Статистика',
-    to: '/statistics'
+    to: '/chicken-game/statistics'
   },
   {
     id: 6,
     name: 'Помощь',
-    to: '/support'
+    to: '/chicken-game/support'
   },
   {
     id: 7,
     name: 'Обзоры',
-    to: '/reviews'
+    to: '/chicken-game/reviews'
   },
   {
     id: 8,
     name: 'Правила',
-    to: '/rules'
+    to: '/chicken-game/rules'
   },
 ];

@@ -24,15 +24,15 @@ function App() {
         <Header />
         <Routes>
           <Route index element={<HomePage />} />
-          <Route path="/contests" element={<ContestsPage />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/feedback" element={<FeedbackPage />} />
-          <Route path="/statistics" element={<StatisticsPage />} />
-          <Route path="/support" element={<SupportPage />} />
-          <Route path="/rules" element={<RulesPage />} />
-          <Route path="/reviews" element={<ReviewsPage />} />
-          <Route path="/*" element={<NotFound />} />
+          <Route path="/chicken-game/contests" element={<ContestsPage />} />
+          <Route path="/chicken-game/news" element={<NewsPage />} />
+          <Route path="/chicken-game/about" element={<AboutPage />} />
+          <Route path="/chicken-game/feedback" element={<FeedbackPage />} />
+          <Route path="/chicken-game/statistics" element={<StatisticsPage />} />
+          <Route path="/chicken-game/support" element={<SupportPage />} />
+          <Route path="/chicken-game/rules" element={<RulesPage />} />
+          <Route path="/chicken-game/reviews" element={<ReviewsPage />} />
+          <Route path="/chicken-game/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
