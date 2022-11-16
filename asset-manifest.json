@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/chicken-game/static/css/main.5d0f28f7.css",
+    "main.js": "/chicken-game/static/js/main.9b3c912f.js",
+    "static/js/787.bc3f57d8.chunk.js": "/chicken-game/static/js/787.bc3f57d8.chunk.js",
+    "static/media/home-page-background.jpg": "/chicken-game/static/media/home-page-background.7bd20888310674a6f2b8.jpg",
+    "static/media/title-header.png": "/chicken-game/static/media/title-header.4b6952fccc0382b3adf3.png",
+    "static/media/home-page-background-phone.png": "/chicken-game/static/media/home-page-background-phone.420efeff7f106fe44248.png",
+    "static/media/title-header-phone.png": "/chicken-game/static/media/title-header-phone.193a2bfc3a3e3be9f27f.png",
+    "static/media/about-background.png": "/chicken-game/static/media/about-background.0681fe25672c15d1d45c.png",
+    "static/media/bg-footer.png": "/chicken-game/static/media/bg-footer.bb755c452bd11dca9d45.png",
+    "static/media/chicken6.svg": "/chicken-game/static/media/chicken6.7f5e06d931359e4d927a.svg",
+    "static/media/chiken-game-logo.svg": "/chicken-game/static/media/chiken-game-logo.7f5e06d931359e4d927aa95675e384aa.svg",
+    "static/media/chicken3.svg": "/chicken-game/static/media/chicken3.ae5ca7493623db44dbcc.svg",
+    "static/media/chicken5.svg": "/chicken-game/static/media/chicken5.adae89335d7d79d8ac0c.svg",
+    "static/media/chicken4.svg": "/chicken-game/static/media/chicken4.883385704ab6d840f1d4.svg",
+    "static/media/chicken1.svg": "/chicken-game/static/media/chicken1.d5cc664461381831b32a.svg",
+    "static/media/chicken2.svg": "/chicken-game/static/media/chicken2.650fe7d316f6992472bd.svg",
+    "static/media/browser.svg": "/chicken-game/static/media/browser.c98cc95d7d92d7c7459e.svg",
+    "static/media/support.svg": "/chicken-game/static/media/support.724bc3db33939d7d29613dfb8ab817c2.svg",
+    "static/media/metamask-icon.svg": "/chicken-game/static/media/metamask-icon.b3649ecfe8c45f27ceb9f99d70f3d24e.svg",
+    "static/media/gift.svg": "/chicken-game/static/media/gift.e47b805ca3e594f82c8083516e533382.svg",
+    "static/media/diagram.svg": "/chicken-game/static/media/diagram.96d2a3a87b03d4550b1a.svg",
+    "static/media/hands.svg": "/chicken-game/static/media/hands.0a1bfe64b26923563d77d868587b0e4c.svg",
+    "static/media/arrow-accord.svg": "/chicken-game/static/media/arrow-accord.e77e9858ebc9edd90eff6b3f300aa140.svg",
+    "static/media/user.svg": "/chicken-game/static/media/user.d56d98bbe58c692b7279.svg",
+    "index.html": "/chicken-game/index.html",
+    "static/media/telegram.svg": "/chicken-game/static/media/telegram.b42dea8f015c8afe6dc421a86a3aa594.svg",
+    "main.5d0f28f7.css.map": "/chicken-game/static/css/main.5d0f28f7.css.map",
+    "main.9b3c912f.js.map": "/chicken-game/static/js/main.9b3c912f.js.map",
+    "787.bc3f57d8.chunk.js.map": "/chicken-game/static/js/787.bc3f57d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d0f28f7.css",
+    "static/js/main.9b3c912f.js"
+  ]
+}
