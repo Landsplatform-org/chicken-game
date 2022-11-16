@@ -1,0 +1,18 @@
+.footer-link {
+  position: relative;
+}
+
+.footer-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: #ffffff;
+  top: 25px;
+
+  transition: width 300ms ease-in-out
+}
+
+.footer-link:hover::before {
+  width: 100%;
+}

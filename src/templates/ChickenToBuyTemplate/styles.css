@@ -1,0 +1,71 @@
+.cs {
+  clip-path: circle(4.7% at 95% 10%);
+  transition: all ease-in-out .3s;
+  z-index: 10;
+}
+
+.cs:hover {
+  clip-path: circle(75%);
+}
+
+.cs:hover .info {
+  opacity: 0;
+}
+
+.info {
+  position: absolute;
+  top: 19px;
+  left: 220px;
+  opacity: 1;
+  z-index: 11;
+
+  transition: all 300ms ease-in-out;
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    position: absolute;
+    top: 19px;
+    left: 196px;
+    opacity: 1;
+    z-index: 11;
+  
+    transition: all 300ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .info {
+    position: absolute;
+    top: 19px;
+    left: 203px;
+    opacity: 1;
+    z-index: 11;
+  
+    transition: all 300ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    position: absolute;
+    top: 19px;
+    left: 100px;
+    opacity: 1;
+    z-index: 11;
+  
+    transition: all 300ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .info {
+    position: absolute;
+    top: 19px;
+    left: 160px;
+    opacity: 1;
+    z-index: 11;
+  
+    transition: all 300ms ease-in-out;
+  }
+}

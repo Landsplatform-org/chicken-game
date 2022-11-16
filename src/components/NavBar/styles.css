@@ -1,0 +1,29 @@
+.nav-bar {
+  display: block
+}
+
+.nav-bar::after {
+  content: "";
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: var(--dark-blue-color);
+  top: 25px;
+
+  transition: width 300ms ease-in-out
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}

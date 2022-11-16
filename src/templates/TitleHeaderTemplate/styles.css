@@ -1,0 +1,15 @@
+.th-background {
+  background-image: url("../../assets/images/title-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 450px) {
+  .th-background {
+    background-image: url("../../assets/images/title-header-phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+}

@@ -1,0 +1,68 @@
+.title-background {
+  background-image: url('../../assets/images/home-page-background.jpg');
+  background-repeat: no-repeat;
+  background-position-y: -70px;
+}
+
+.clip {
+  background: var(--dark-green-color);
+  clip-path: polygon(100% 41%, 100% 100%, 68% 100%, 0 100%, 39% 88%, 65% 75%, 86% 58%);
+}
+
+.get-chicken-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.get-chicken-btn::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255, 0.1);
+  top: -50px;
+  left: 39%;
+  z-index: 1;
+
+  transition: transform 300ms ease-in-out;
+}
+
+.get-chicken-btn:hover::before {
+  transform: scale(8.5);
+}
+
+.get-chicken-btn span {
+  position: relative;
+  z-index: 2
+}
+
+@media screen and (max-width: 450px) {
+  .title-background {
+    background-image: url('../../assets/images/home-page-background-phone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .title-background {
+    background-image: url('../../assets/images/home-page-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 30px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .title-background {
+    background-image: url('../../assets/images/home-page-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 30px;
+  }
+}

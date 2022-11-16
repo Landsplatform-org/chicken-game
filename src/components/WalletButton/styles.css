@@ -1,0 +1,28 @@
+.wallet-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.wallet-btn::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255, 0.1);
+  top: -50px;
+  left: 39%;
+  z-index: 1;
+
+  transition: transform 300ms ease-in-out;
+}
+
+.wallet-btn:hover::before {
+  transform: scale(8.5);
+}
+
+.wallet-btn span {
+  position: relative;
+  z-index: 2
+}

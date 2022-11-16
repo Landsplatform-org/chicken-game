@@ -1,0 +1,56 @@
+.inset-shadow {
+  background-image: url("../../assets/images/bg-statistics.png");
+}
+
+@media screen and (max-width: 450px) {
+  .inset-shadow {
+    background-color: var(--light-blue-color);
+    background-image: none;
+  }
+}
+/* .inset-shadow {
+  position: relative;
+  background-color: var(--light-blue-color);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.inset-shadow::after {
+  position: absolute;
+  content: "";
+  clip-path: polygon(
+    100% 100%,
+    100% 47%,
+    98% 50%,
+    97% 52%,
+    95% 54%,
+    93% 57%,
+    91% 59%,
+    89% 62%,
+    87% 64%,
+    85% 66%,
+    82% 69%,
+    79% 72%,
+    77% 74%,
+    76% 75%,
+    74% 77%,
+    72% 79%,
+    70% 81%,
+    69% 82%,
+    66% 84%,
+    64% 85%,
+    61% 87%,
+    58% 89%,
+    54% 91%,
+    52% 92%,
+    48% 93%,
+    43% 94%,
+    36% 96%,
+    32% 97%,
+    28% 98%,
+    24% 100%
+  );
+  background-color: var(--blue-color);
+  opacity: 0.5;
+  z-index: 1;
+} */

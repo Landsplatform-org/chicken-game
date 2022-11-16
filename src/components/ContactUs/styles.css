@@ -1,0 +1,37 @@
+.email-link {
+  position: relative;
+}
+
+.email-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: var(--dark-blue-color);
+  top: 50px;
+
+  transition: width 300ms ease-in-out
+}
+
+.email-link:hover::before {
+  width: 100%;
+}
+
+.telegram-link {
+  position: relative;
+}
+
+.telegram-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: var(--light-blue-color);
+  top: 50px;
+
+  transition: width 300ms ease-in-out
+}
+
+.telegram-link:hover::before {
+  width: 100%;
+}

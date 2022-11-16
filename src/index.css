@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Inter:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --russian: "Inter";
+    --english: "Nunito";
+    --dark-blue-color: #0c2b3c;
+    --blue-color: #036095;
+    --light-blue-color: #2790cb;
+    --darker-light-blue-color: #197eb7;
+    --sky-blue-color: #e5f7ff;
+    --dark-green-color: #264926;
+    --green-color: #538653;
+    --light-green-color: #7ec07e;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  height: 50px;
+  border-radius: 100px;
+}
+

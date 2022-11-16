@@ -1,0 +1,34 @@
+.about-background {
+  background-image: url('../../assets/images/about-background.png');
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 450px) {
+  .about-background {
+    background-image: url('../../assets/images/about-background.png');
+    background-position-y: 250px;
+    background-position-x: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .about-background {
+    background-image: url('../../assets/images/about-background.png');
+    background-position-x: 160px;
+    background-position-y: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .about-background {
+    background-image: url('../../assets/images/about-background.png');
+    background-position-y: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
