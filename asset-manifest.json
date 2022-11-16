@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chicken-game/static/css/main.5d0f28f7.css",
-    "main.js": "/chicken-game/static/js/main.9b3c912f.js",
+    "main.js": "/chicken-game/static/js/main.bd7ebac5.js",
     "static/js/787.bc3f57d8.chunk.js": "/chicken-game/static/js/787.bc3f57d8.chunk.js",
     "static/media/home-page-background.jpg": "/chicken-game/static/media/home-page-background.7bd20888310674a6f2b8.jpg",
     "static/media/title-header.png": "/chicken-game/static/media/title-header.4b6952fccc0382b3adf3.png",
@@ -27,11 +27,11 @@
     "index.html": "/chicken-game/index.html",
     "static/media/telegram.svg": "/chicken-game/static/media/telegram.b42dea8f015c8afe6dc421a86a3aa594.svg",
     "main.5d0f28f7.css.map": "/chicken-game/static/css/main.5d0f28f7.css.map",
-    "main.9b3c912f.js.map": "/chicken-game/static/js/main.9b3c912f.js.map",
+    "main.bd7ebac5.js.map": "/chicken-game/static/js/main.bd7ebac5.js.map",
     "787.bc3f57d8.chunk.js.map": "/chicken-game/static/js/787.bc3f57d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d0f28f7.css",
-    "static/js/main.9b3c912f.js"
+    "static/js/main.bd7ebac5.js"
   ]
 }
