@@ -5,7 +5,7 @@ import { IAdvatagesTemplateProps } from '../interfaces/IAdvantagesTemplateProps'
 const styles = {
   body: `
     w-[47%] h-[450px] p-12 rounded-3xl bg-light_blue
-    phone:w-full phone:p-4
+    phone:w-full phone:h-max phone:p-4
     tablet:w-[50%] tablet:p-12
     laptop:w-[50%]
     desktop:w-[40%]

@@ -17,7 +17,7 @@ const styles = {
   `,
   grid: `
     flex flex-row flex-wrap gap-5
-    phone:flex-col phone:items-center phone:p-5
+    phone:flex-col phone:items-center phone:p-0
     tablet:flex-col tablet:items-center
     laptop:flex-row laptop:items-center laptop:justify-center laptop:p-6
     desktop:flex-row desktop:justify-center
