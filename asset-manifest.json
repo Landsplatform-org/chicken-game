@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/chicken-game/static/css/main.13a49500.css",
-    "main.js": "/chicken-game/static/js/main.cd83b884.js",
+    "main.css": "/chicken-game/static/css/main.82c309cf.css",
+    "main.js": "/chicken-game/static/js/main.c9f66cd4.js",
     "static/css/414.ba0fc8e2.chunk.css": "/chicken-game/static/css/414.ba0fc8e2.chunk.css",
     "static/js/414.766eb485.chunk.js": "/chicken-game/static/js/414.766eb485.chunk.js",
     "static/css/511.38f13e05.chunk.css": "/chicken-game/static/css/511.38f13e05.chunk.css",
     "static/js/511.68642b5c.chunk.js": "/chicken-game/static/js/511.68642b5c.chunk.js",
     "static/css/725.d0a90caa.chunk.css": "/chicken-game/static/css/725.d0a90caa.chunk.css",
-    "static/js/725.bdf98035.chunk.js": "/chicken-game/static/js/725.bdf98035.chunk.js",
+    "static/js/725.c88155d2.chunk.js": "/chicken-game/static/js/725.c88155d2.chunk.js",
     "static/css/22.aaf7ddef.chunk.css": "/chicken-game/static/css/22.aaf7ddef.chunk.css",
     "static/js/22.16dcd7d2.chunk.js": "/chicken-game/static/js/22.16dcd7d2.chunk.js",
     "static/css/956.160b6a57.chunk.css": "/chicken-game/static/css/956.160b6a57.chunk.css",
@@ -55,14 +55,14 @@
     "index.html": "/chicken-game/index.html",
     "static/media/telegram.svg": "/chicken-game/static/media/telegram.b42dea8f015c8afe6dc421a86a3aa594.svg",
     "static/media/user-white.svg": "/chicken-game/static/media/user-white.5928b874f25bcef1e10077d6570650df.svg",
-    "main.13a49500.css.map": "/chicken-game/static/css/main.13a49500.css.map",
-    "main.cd83b884.js.map": "/chicken-game/static/js/main.cd83b884.js.map",
+    "main.82c309cf.css.map": "/chicken-game/static/css/main.82c309cf.css.map",
+    "main.c9f66cd4.js.map": "/chicken-game/static/js/main.c9f66cd4.js.map",
     "414.ba0fc8e2.chunk.css.map": "/chicken-game/static/css/414.ba0fc8e2.chunk.css.map",
     "414.766eb485.chunk.js.map": "/chicken-game/static/js/414.766eb485.chunk.js.map",
     "511.38f13e05.chunk.css.map": "/chicken-game/static/css/511.38f13e05.chunk.css.map",
     "511.68642b5c.chunk.js.map": "/chicken-game/static/js/511.68642b5c.chunk.js.map",
     "725.d0a90caa.chunk.css.map": "/chicken-game/static/css/725.d0a90caa.chunk.css.map",
-    "725.bdf98035.chunk.js.map": "/chicken-game/static/js/725.bdf98035.chunk.js.map",
+    "725.c88155d2.chunk.js.map": "/chicken-game/static/js/725.c88155d2.chunk.js.map",
     "22.aaf7ddef.chunk.css.map": "/chicken-game/static/css/22.aaf7ddef.chunk.css.map",
     "22.16dcd7d2.chunk.js.map": "/chicken-game/static/js/22.16dcd7d2.chunk.js.map",
     "956.160b6a57.chunk.css.map": "/chicken-game/static/css/956.160b6a57.chunk.css.map",
@@ -84,7 +84,7 @@
     "800.9de9f925.chunk.js.map": "/chicken-game/static/js/800.9de9f925.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13a49500.css",
-    "static/js/main.cd83b884.js"
+    "static/css/main.82c309cf.css",
+    "static/js/main.c9f66cd4.js"
   ]
 }
