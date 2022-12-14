@@ -33,15 +33,15 @@ const styles = {
     hidden 
     phone:absolute
     phone:flex phone:flex-col phone:w-max phone:h-max phone:p-4 phone:gap-2
-    phone:bg-white phone:top-[56px] phone:left-[-76px] phone:shadow phone:shadow-lg
+    phone:bg-white phone:top-[56px] phone:left-[-76px] phone:shadow phone:shadow-pnav
     phone:rounded-b-2xl
     tablet:absolute
     tablet:flex tablet:flex-col tablet:w-max tablet:h-max tablet:p-6 tablet:gap-2
-    tablet:bg-white tablet:top-[64px] tablet:left-[-110px] tablet:shadow tablet:shadow-lg
+    tablet:bg-white tablet:top-[64px] tablet:left-[-110px] tablet:shadow tablet:shadow-pnav
     tablet:rounded-b-3xl
     laptop:absolute
     laptop:flex laptop:flex-col laptop:w-max laptop:h-max laptop:p-6 tablet:gap-2
-    laptop:bg-white laptop:top-[62px] laptop:left-[-106px] laptop:shadow laptop:shadow-lg
+    laptop:bg-white laptop:top-[62px] laptop:left-[-106px] laptop:shadow laptop:shadow-pnav
     laptop:rounded-b-3xl
     transition duration-300
   `,

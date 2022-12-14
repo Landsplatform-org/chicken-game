@@ -5,7 +5,7 @@ import WalletButton from "./WalletButton/WalletButton";
 
 const styles = {
   wrapper: `
-    fixed w-full h-max bg-white flex justify-center py-4 z-[1000]
+    fixed w-full h-max bg-white flex justify-center gap-2 py-4 z-[1000]
     phone:py-0
     tablet:py-0
     laptop:py-0
@@ -15,10 +15,10 @@ const styles = {
     phone:w-full
     tablet:w-full
     laptop:w-full
-    desktop:w-[90%]
+    desktop:w-[95%]
   `,
   content: `
-    flex flex-row justify-between items-center
+    flex flex-row items-center
     phone:p-4
     tablet:p-6
     laptop:p-6

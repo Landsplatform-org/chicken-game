@@ -1,9 +1,7 @@
 export interface INewsProps {
-  name: {
-    common: string;
-    official: string;
-  };
-  flags: {
-    svg: string;
-  };
+  id: string;
+  title: string;
+  text: string;
+  author: string;
+  image: string;
 }

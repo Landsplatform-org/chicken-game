@@ -1,29 +1,64 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import NewsTemplate from "../templates/NewsTemplate";
-import Pagination from "./Pagination";
-import { INewsProps } from "../interfaces/INews";
+import React, { useState, useEffect, useContext } from "react";
+
+import NewsTemplate from "../templates/NewsTemplate/NewsTemplate";
+import NewsModal from "../components/NewsModal";
+import Modal from "react-modal";
 import { MutatingDots } from "react-loader-spinner";
+
+import { NewsModalContext } from "../context/NewsModalContext";
+
+import { database } from "../firebase.config"
+import { collection, getDocs } from "firebase/firestore";
+
+
+Modal.setAppElement(document.getElementById("root")!);
 
 const styles = {
   wrapper: `w-full h-max bg-white flex justify-center`,
-  container: `w-[70%] flex flex-col items-center gap-10`,
-  paginateButton: `w-max h-max font-english font-bold py-2 px-6 flex flex-row items-center justify-center border-2 border-blue bg-transparent text-blue rounded-full hover:bg-blue hover:text-white transition duration-100`
+  container: `
+    w-[70%] flex flex-col items-center gap-12
+    phone:w-full phone:px-4
+    tablet:w-[90%] tablet:px-4
+    laptop:w-full laptop:px-4
+    desktop:w-[90%]
+  `,
+};
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "transparent",
+    padding: 0,
+    border: "none",
+    zIndex: 1002,
+  },
+  overlay: {
+    overflow: "hidden",
+    backgroundColor: "rgba(10, 11, 13, 0.5)",
+    backdropFilter: "blur(2px)",
+    zIndex: 1001,
+  },
 };
 
 const News = () => {
-  const [newsList, setNewsList] = useState<INewsProps[]>([]);
+  const [newsList, setNewsList] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>();
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [sizePerPage] = useState<number>(15);
 
-  const getAllProducts = async () => {
+  const { isShow, modalNews } = useContext(NewsModalContext);
+
+  const newsInstance = collection(database, "news");
+  
+  const getAllNews = async () => {
     setLoading(true);
     try {
-      const res: any = await axios.get<INewsProps>(
-        "https://restcountries.com/v3.1/all"
-      );
-      setNewsList(res.data);
+      const res = await getDocs(newsInstance)
+      setNewsList(res.docs.map((item) => {
+        return { ...item.data(), id: item.id, }
+      }))
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -32,21 +67,8 @@ const News = () => {
   };
 
   useEffect(() => {
-    getAllProducts();
+    getAllNews();
   }, []);
-
-  const lastNewsIndex = currentPage + sizePerPage;
-  const firstNewsIndex = lastNewsIndex - sizePerPage;
-  const currentNews = newsList.slice(firstNewsIndex, lastNewsIndex);
-
-  const paginate = (pageNumber: number) => {
-    setLoading(true);
-    setCurrentPage(pageNumber);
-    setLoading(false);
-  };
-  
-  const nextPage = () => setCurrentPage((prev) => prev + 1);
-  const prevPage = () => setCurrentPage((prev) => prev - 1);
 
   return (
     <div className={styles.wrapper}>
@@ -66,23 +88,23 @@ const News = () => {
             />
           </div>
         )}
-        {currentNews?.map((item, index) => (
+        {newsList?.map((item: any) => (
           <NewsTemplate
-            key={index}
-            common={item.name.common}
-            official={item.name.official}
-            image={item.flags.svg}
+            key={item.id}
+            title={item.title}
+            text={item.text}
+            author={item.author}
+            image={item.image}
           />
         ))}
-        <div className="flex flex-row gap-10">
-          <a href="#" className={styles.paginateButton} onClick={prevPage}>Назад</a>
-          <Pagination
-            sizePerPage={sizePerPage}
-            totalNews={newsList.length}
-            paginate={paginate}
+        <Modal isOpen={!!isShow} style={customStyles}>
+          <NewsModal
+            title={modalNews.title}
+            text={modalNews.text}
+            author={modalNews.author}
+            image={modalNews.image}
           />
-          <a href="#" className={styles.paginateButton} onClick={nextPage}>Вперед</a>
-        </div>
+        </Modal>
       </div>
     </div>
   );

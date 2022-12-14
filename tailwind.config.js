@@ -25,6 +25,11 @@ module.exports = {
         russian: "var(--russian)",
         english: "var(--english)",
       },
+      boxShadow: {
+        "4xl": "0px -4px 4px rgba(0, 0, 0, 0.25)",
+        "5xl": "0px -4px 10px rgba(0, 0, 0, 0.25)",
+        "pnav": "-4px 4px 10px rgba(0, 0, 0, 0.25)",
+      }
     },
   },
   plugins: [],

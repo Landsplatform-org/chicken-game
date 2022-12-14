@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ContestsParticipantsTemplate from "../templates/ContestsParticipantsTemplate";
+import UsersDataTemplate from "../templates/UsersDataTemplate";
 import UsersTemplate from "../templates/UsersTemplate";
 import { IParticipantListProps } from "../interfaces/IParticipantsListProps";
 import { participantsList } from "./ContestParticipants/participants-list";
@@ -47,7 +47,7 @@ const StatisticsLists = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <ContestsParticipantsTemplate title="Последние 10 пополнений">
+          <UsersDataTemplate title="Последние 10 пополнений">
             {firstListPart?.map((item) => (
               <UsersTemplate
                 key={item.id}
@@ -55,8 +55,8 @@ const StatisticsLists = () => {
                 sum={item.sum}
               />
             ))}
-          </ContestsParticipantsTemplate>
-          <ContestsParticipantsTemplate title="Последние 10 выплат">
+          </UsersDataTemplate>
+          <UsersDataTemplate title="Последние 10 выплат">
             {secondListPart?.map((item) => (
               <UsersTemplate
                 key={item.id}
@@ -64,8 +64,8 @@ const StatisticsLists = () => {
                 sum={item.sum}
               />
             ))}
-          </ContestsParticipantsTemplate>
-          <ContestsParticipantsTemplate title="Топ 10 рефералов">
+          </UsersDataTemplate>
+          <UsersDataTemplate title="Топ 10 рефералов">
             {secondListPart?.map((item) => (
               <UsersTemplate
                 key={item.id}
@@ -73,8 +73,8 @@ const StatisticsLists = () => {
                 sum={item.sum}
               />
             ))}
-          </ContestsParticipantsTemplate>
-          <ContestsParticipantsTemplate title="Топ 10 по заработку">
+          </UsersDataTemplate>
+          <UsersDataTemplate title="Топ 10 по заработку">
             {secondListPart?.map((item) => (
               <UsersTemplate
                 key={item.id}
@@ -82,7 +82,7 @@ const StatisticsLists = () => {
                 sum={item.sum}
               />
             ))}
-          </ContestsParticipantsTemplate>
+          </UsersDataTemplate>
         </div>
       </div>
     </div>

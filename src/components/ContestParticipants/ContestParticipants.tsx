@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ContestsParticipantsTemplate from "../../templates/ContestsParticipantsTemplate";
+import UsersDataTemplate from "../../templates/UsersDataTemplate";
 import UsersTemplate from "../../templates/UsersTemplate";
+import UsersAddDataTemplate from "../../templates/UsersAddDataTemplate";
 import { IParticipantListProps } from "../../interfaces/IParticipantsListProps";
-import { participantsList } from './participants-list';
+import { participantsList } from "./participants-list";
+
 
 const styles = {
   wrapper: `w-full flex justify-center items-center`,
@@ -23,7 +25,8 @@ const styles = {
 
 const ContestParticipants = () => {
   const [firstListPart, setFirstListPart] = useState<IParticipantListProps[]>();
-  const [secondListPart, setSecondListPart] = useState<IParticipantListProps[]>();
+  const [secondListPart, setSecondListPart] =
+    useState<IParticipantListProps[]>();
 
   const devideArray = (array: IParticipantListProps[]) => {
     const array_size = 10;
@@ -46,16 +49,30 @@ const ContestParticipants = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <ContestsParticipantsTemplate title="Топ участников конкурса реферелов">
-            {firstListPart?.map((item) => (
-              <UsersTemplate key={item.id} txhash={item.txhash} sum={item.sum} />
-            ))}
-          </ContestsParticipantsTemplate>
-          <ContestsParticipantsTemplate title="Топ участников конкурса инвесторов">
-            {secondListPart?.map((item) => (
-              <UsersTemplate key={item.id} txhash={item.txhash} sum={item.sum} />
-            ))}
-          </ContestsParticipantsTemplate>
+          <UsersDataTemplate title="Топ участников конкурса реферелов">
+            <UsersAddDataTemplate txhash="Логин" sum="Сумма"/>
+            <>
+              {firstListPart?.map((item) => (
+                <UsersTemplate
+                  key={item.id}
+                  txhash={item.txhash}
+                  sum={item.sum}
+                />
+              ))}
+            </>
+          </UsersDataTemplate>
+          <UsersDataTemplate title="Топ участников конкурса инвесторов">
+           <UsersAddDataTemplate txhash="Логин" sum="Сумма"/>
+            <>
+              {secondListPart?.map((item) => (
+                <UsersTemplate
+                  key={item.id}
+                  txhash={item.txhash}
+                  sum={item.sum}
+                />
+              ))}
+            </>
+          </UsersDataTemplate>
         </div>
       </div>
     </div>

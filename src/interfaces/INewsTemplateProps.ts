@@ -1,5 +1,6 @@
 export interface INewsTemplateProps {
-  common: string;
-  official: string;
-  image: string
+  title: string;
+  text: string;
+  author: string;
+  image: string;
 }

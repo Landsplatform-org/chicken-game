@@ -13,11 +13,6 @@ const styles = {
     font-english font-[900] text-white text-[1.75rem] text-center
     phone:text-[1.5rem]
   `,
-  statsContainer: `px-12 py-6 bg-light_blue flex flex-row justify-between items-center shadow shadow-3xl`,
-  stats: `
-    font-russian font-normal text-white text-[1.25rem]
-    text-[1.2rem]
-  `,
   usersContainer: `w-full flex flex-col`,
   span: `font-russian font-normal text-dark_blue text-[1.25rem]`
 }
@@ -29,10 +24,6 @@ const ContestsParticipantsTemplate: React.FC<IContestsParticipantsTemplateProps>
         <h1 className={styles.title}>
           {title}
         </h1>
-      </div>
-      <div className={styles.statsContainer}>
-        <span className={styles.stats}>Логин</span>
-        <span className={styles.stats}>Сумма</span>
       </div>
       <div className={styles.usersContainer}>
         {children}

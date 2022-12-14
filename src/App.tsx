@@ -1,8 +1,12 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { MutatingDots } from "react-loader-spinner";
+
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
-import { MutatingDots } from "react-loader-spinner";
+
+import { NewsModalContext } from "./context/NewsModalContext";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const ContestsPage = lazy(() => import("./pages/ContestsPage"));
@@ -13,16 +17,22 @@ const StatisticsPage = lazy(() => import("./pages/StatisticsPage"));
 const SupportPage = lazy(() => import("./pages/SupportPage"));
 const RulesPage = lazy(() => import("./pages/RulesPage/RulesPage"));
 const ReviewsPage = lazy(() => import("./pages/ReviewsPage"));
+const UserPage = lazy(() => import("./pages/UserPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const styles = {
   wrapper: `w-full select-none flex flex-col flex-auto gap-56 overflow-hidden relative`,
-  loaderContainer: `w-screen h-screen flex items-center justify-center bg-white`
+  loaderContainer: `w-screen h-screen flex items-center justify-center bg-white`,
 };
 
 function App() {
+  const { isShow } = useContext(NewsModalContext);
+
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={styles.wrapper}
+      style={isShow ? { maxHeight: "100vh" } : { maxHeight: "max-content" }}
+    >
       <BrowserRouter>
         <Suspense
           fallback={
@@ -48,13 +58,11 @@ function App() {
             <Route path="/chicken-game/news" element={<NewsPage />} />
             <Route path="/chicken-game/about" element={<AboutPage />} />
             <Route path="/chicken-game/feedback" element={<FeedbackPage />} />
-            <Route
-              path="/chicken-game/statistics"
-              element={<StatisticsPage />}
-            />
+            <Route path="/chicken-game/statistics"element={<StatisticsPage />}/>
             <Route path="/chicken-game/support" element={<SupportPage />} />
             <Route path="/chicken-game/rules" element={<RulesPage />} />
             <Route path="/chicken-game/reviews" element={<ReviewsPage />} />
+            <Route path="/chicken-game/user-page" element={<UserPage />} />
             <Route path="/chicken-game/*" element={<NotFound />} />
           </Routes>
           <Footer />

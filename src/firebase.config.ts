@@ -1,16 +1,14 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAxisHaQ-BOhQZ-rFUoUA9tk7p-l30g2-A",
-  authDomain: "chicken-game-project.firebaseapp.com",
-  projectId: "chicken-game-project",
-  storageBucket: "chicken-game-project.appspot.com",
-  messagingSenderId: "270538537730",
-  appId: "1:270538537730:web:51e05f12872e684b24a01b",
-  measurementId: "G-8Q10VW5070"
+  apiKey: "AIzaSyDwIe5CMsz_JpfvVigEh1B2DPg_5Ee6cIc",
+  authDomain: "chicken-game-backend.firebaseapp.com",
+  projectId: "chicken-game-backend",
+  storageBucket: "chicken-game-backend.appspot.com",
+  messagingSenderId: "644982332504",
+  appId: "1:644982332504:web:7274f88417e67dd3757e2d"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig)
+export const database = getFirestore(app);

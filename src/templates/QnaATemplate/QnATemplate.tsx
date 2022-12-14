@@ -4,7 +4,7 @@ import { IQnATemplateProps } from "../../interfaces/IQnATemplateProps";
 import "./styles.css";
 
 const styles = {
-  body: `rounded-3xl overflow-hidden`,
+  body: `rounded-3xl flex flex-col items-center transition-all ease-in-out duration-300`,
   questionContainer: `
     relative z-[100] w-full flex flex-row justify-between items-center p-6 rounded-full bg-light_blue
     phone:p-4
@@ -13,7 +13,7 @@ const styles = {
     font-english font-[900] text-white text-[1.25rem]
     phone:text-[1.2rem]
   `,
-  answersContainer: `relative z-[99] rounded-bl-3xl rounded-br-3xl shadow-md transition-all ease-in-out duration-300 overflow-hidden origin-top`,
+  answersContainer: `p-6 shadow-md rounded-bl-3xl rounded-br-3xl overflow-hidden`,
   answersText: `
     font-russian font-normal text-dark_blue text-[1.25rem]
     phone:text-[1.2rem]
@@ -31,7 +31,7 @@ const QnATemplate: React.FC<IQnATemplateProps> = ({ question, answer }) => {
   };
 
   return (
-    <div className={styles.body}>
+    <div className={`${styles.body} ${clicked ? "h-auto" : "h-[70px]"}`}>
       <button className={styles.questionContainer} onClick={handleToggle}>
         <h2 className={styles.questionText}>{question}</h2>
         <img
@@ -41,7 +41,7 @@ const QnATemplate: React.FC<IQnATemplateProps> = ({ question, answer }) => {
           alt="arrow"
         />
       </button>
-      <div className={`${styles.answersContainer} ${clicked ? "-translate-y-0 max-h-max p-6" : "-translate-y-[200%] max-h-0 p-0"}`}>
+      <div className={styles.answersContainer}>
         <p className={styles.answersText}>{answer}</p>
       </div>
     </div>
