@@ -97,15 +97,15 @@ const News = () => {
             image={item.image}
           />
         ))}
-        <Modal isOpen={!!isShow} style={customStyles}>
-          <NewsModal
-            title={modalNews.title}
-            text={modalNews.text}
-            author={modalNews.author}
-            image={modalNews.image}
-          />
-        </Modal>
       </div>
+      <Modal isOpen={!!isShow} style={customStyles}>
+        <NewsModal
+          title={modalNews.title}
+          text={modalNews.text}
+          author={modalNews.author}
+          image={modalNews.image}
+        />
+        </Modal>
     </div>
   );
 };
